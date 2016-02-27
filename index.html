@@ -26,19 +26,25 @@
 		</div>
 		<div id="difficult-container">
 			<div class="form-group">
-			    <label for="mines-width">Nb de cellules horizontales</label>
-			    <input id="mines-width" type="text" class="form-control" maxlength="3" value="9" />
+			    <label for="cells-width">Nb de cellules horizontales</label>
+			    <input id="cells-width" type="text" class="form-control" maxlength="3" value="9" />
 		 	</div>
 		 	
 		 	<div class="form-group">
-			    <label for="mines-height">Nb de cellules verticales</label>
-			    <input id="mines-height" type="text" class="form-control" maxlength="3" value="9" />
+			    <label for="cells-height">Nb de cellules verticales</label>
+			    <input id="cells-height" type="text" class="form-control" maxlength="3" value="9" />
 		 	</div>
 		 	
 		 	<div class="form-group">
 			    <label for="nb-mines">Nb de mines</label>
 			    <input id="nb-mines" type="text" class="form-control" maxlength="5" value="10" />
 		 	</div>
+			<br />
+			<p>
+				<button id="easy-difficult" class="btn btn-default">Facile</button>
+				<button id="medium-difficult" class="btn btn-default">Moyen</button>
+				<button id="hard-difficult" class="btn btn-default">Difficile</button>
+			</p>
 			<br />
 			<p>
 				<button id="apply-difficult" class="btn btn-default">Relancer le jeu</button>

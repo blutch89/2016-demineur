@@ -1,5 +1,5 @@
 var Minesweeper = {
-	mineSize: 40,
+	mineSize: 35,
 	normalBackground: "blue",
 	clickedBackground: "none",
 	flagState: "drapeau.png",
