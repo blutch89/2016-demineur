@@ -19,7 +19,6 @@ body {
 #game-time-div {
 	display: inline-block;
 	background-color: #010101;
-	margin: 0 15px;
 	padding: 15px;
 	border-radius: 5px;
 	height: 50px;
@@ -42,7 +41,6 @@ body {
 #game-nb-flags-div {
 	display: inline-block;
 	background-color: #010101;
-	margin: 0 15px;
 	padding: 15px;
 	border-radius: 5px;
 	height: 50px;

@@ -31,6 +31,13 @@ $(function() {
 		var nbMines = parseInt($("#nb-mines").val());
 		
 		var difficultParam = Object.create(DifficultParam);
+		var resultValidate = difficultParam.validateParameters(width, height, nbMines);
+		
+		if (resultValidate != true) {
+			alert(resultValidate);
+			return;
+		}
+		
 		difficultParam.init(width, height, nbMines);
 		
 		minesweeper.resetGame();

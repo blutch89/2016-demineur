@@ -1,5 +1,5 @@
 var Minesweeper = {
-	mineSize: 35,
+	mineSize: 30,
 	normalBackground: "blue",
 	clickedBackground: "none",
 	flagState: "drapeau.png",
@@ -73,9 +73,15 @@ var Minesweeper = {
 		
 		for (i = 0; i < this.difficultParam.nbMines; i++) {
 			do {
+				var ok = true;
 				var randomNb = Math.floor(Math.random() * this.difficultParam.mineHeight * this.difficultParam.mineWidth);
-				mines[i] = randomNb;
-			} while ($.inArray(randomNb, mines) == -1);
+				
+				if ($.inArray(randomNb, mines) == -1) {
+					mines[i] = randomNb;
+				} else {
+					ok = false;
+				}
+			} while (ok == false);
 		}
 		
 		return mines;
